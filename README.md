@@ -2,7 +2,7 @@
 
 # LiPHt
 
-<img src="public/lipht-logo.png" alt="LiPHt Logo" width="250px">
+<img src="assets/lipht-logo.png" alt="LiPHt Logo" width="250px">
 
 **Uplifting Filipinos, Unlocking Futures**
 
