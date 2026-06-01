@@ -181,6 +181,8 @@ LiPHt/
 | Name | Role |
 |---|---|
 | Princess Gwenn A. Destura | Developer |
+| Mao Zeth A. Abel | Developer |
+| Kyle Cedric R. Panganiban | Developer |
 
 ---
 
