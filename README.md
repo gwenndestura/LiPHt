@@ -1,282 +1,189 @@
 <div align="center">
+  <img src="src/assets/lipht-logo.png" alt="LiPHt Logo" width="200" />
 
-# LiPHt
+  <h1>LiPHt</h1>
 
-<img src="assets/lipht-logo.png" alt="LiPHt Logo" width="250px">
+  <p>A web platform connecting Filipino communities to scholarships, livelihood programs,<br/>and opportunities that uplift lives and fight poverty.</p>
 
-**Uplifting Filipinos, Unlocking Futures**
-
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/lipht/lipht)
-[![React](https://img.shields.io/badge/react-18.3+-blue.svg)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/typescript-5.8+-blue.svg)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/vite-5.4+-purple.svg)](https://vitejs.dev/)
-[![Supabase](https://img.shields.io/badge/supabase-2.83+-green.svg)](https://supabase.com/)
-
-[📖 Documentation](#documentation) • [📧 Contact](mailto:contact@lipht.org) • [🌐 Website](https://lipht.org/)
-
+  <p>
+    <img src="https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react&logoColor=black" />
+    <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Vite-5.x-646CFF?style=flat-square&logo=vite&logoColor=white" />
+    <img src="https://img.shields.io/badge/Supabase-2.x-3ECF8E?style=flat-square&logo=supabase&logoColor=white" />
+    <img src="https://img.shields.io/badge/Firebase-12.x-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
+    <img src="https://img.shields.io/badge/Node.js-≥18-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+  </p>
 </div>
 
 ---
 
 ## Overview
 
-LiPHt is a comprehensive web platform designed to uplift Filipino communities by connecting them to accessible opportunities, scholarships, and livelihood programs. The system bridges the gap between Filipino families and resources that can transform their lives, fighting poverty through education, training, and sustainable development.
+**LiPHt** (*Uplifting Filipinos, Unlocking Futures*) is a community-driven web platform designed to bridge the gap between Filipino families and life-changing resources. Users can discover scholarships, government programs, training initiatives, and livelihood opportunities — all in one place — with a guided application experience and AI-powered support.
+
+Aligned with **SDG 1 (No Poverty)**, LiPHt aims to create meaningful impact across all 81 provinces of the Philippines.
 
 ---
 
 ## Features
 
-### Core Functionality
-- **Opportunity Discovery**: Centralized platform for scholarships, training programs, and livelihood opportunities
-- **Real-time Updates**: Live database of opportunities from government agencies, private foundations, and international organizations
-- **User-friendly Interface**: Intuitive navigation with detailed opportunity information and application guidance
-- **Community Impact**: Direct connection to SDG 1 (No Poverty) initiatives across all 81 provinces
-
-### Security & Performance
-- **Secure Authentication**: Supabase-powered user authentication with JWT tokens
-- **Responsive Design**: Mobile-first approach ensuring accessibility across all devices
-- **Fast Loading**: Optimized with Vite for quick page loads and smooth user experience
-- **Data Integrity**: Comprehensive validation and real-time data synchronization
-
-### User Interface
-- **Modern Design**: Built with Tailwind CSS and Shadcn UI components
-- **Interactive Elements**: Smooth animations and scroll-triggered effects
-- **Accessibility**: WCAG-compliant design for inclusive user experience
-- **Multi-language Support**: Foundation for future localization features
+- **Opportunity Discovery** — Centralized listings of scholarships, training programs, and livelihood initiatives from government agencies and private organizations
+- **SDG 1 Advocacy** — Dedicated section covering No Poverty goals, beneficiary stories, advocacy articles, and progress tracking
+- **Donate & Get Involved** — Integrated donation flow with QR code support and showcase of past donations
+- **AI Chatbot Support** — In-app chatbot powered by a Supabase Edge Function to guide users through the platform
+- **Secure Authentication** — Supabase-managed sign-up, login, and session handling with JWT tokens
+- **User Profiles** — Personalized profiles to track interests and application activity
+- **Admin Dashboard** — Internal dashboard for managing opportunities and platform content
+- **Scroll Animations** — Smooth, scroll-triggered reveal animations throughout the UI
+- **Responsive Design** — Mobile-first layout accessible on all screen sizes
 
 ---
 
-## Architecture
+## Tech Stack
 
-### System Components
-
-#### Frontend Application (React + TypeScript)
-- **Framework**: React 18 with TypeScript for type safety
-- **Build Tool**: Vite for fast development and optimized production builds
-- **Styling**: Tailwind CSS with custom design system
-- **UI Components**: Shadcn UI component library for consistent design
-- **Routing**: React Router for client-side navigation
-
-#### Backend Services (Supabase)
-- **Database**: PostgreSQL with real-time subscriptions
-- **Authentication**: Built-in user management and JWT tokens
-- **Edge Functions**: Serverless functions for chat and notifications
-- **Storage**: File storage for images and documents
-
-### Data Flow
-1. **User Registration**: Secure signup with email verification
-2. **Opportunity Browsing**: Real-time queries with filtering and search
-3. **Application Process**: Guided application forms with validation
-4. **Community Engagement**: Chat support and notification systems
+| Layer | Technology |
+|---|---|
+| UI Framework | [React 18](https://react.dev/) with TypeScript |
+| Build Tool | [Vite 5](https://vitejs.dev/) |
+| Styling | [Tailwind CSS 3](https://tailwindcss.com/) with [Shadcn UI](https://ui.shadcn.com/) (Radix UI) |
+| Backend & Auth | [Supabase](https://supabase.com/) (PostgreSQL, Auth, Edge Functions) |
+| Additional Services | [Firebase 12](https://firebase.google.com/) |
+| Routing | [React Router DOM v6](https://reactrouter.com/) |
+| Data Fetching | [TanStack Query v5](https://tanstack.com/query) |
+| Forms | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) |
+| Runtime | Node.js ≥ 18 |
 
 ---
 
-## Installation
+## Getting Started
 
 ### Prerequisites
-- Node.js 18 or higher
-- npm or yarn package manager
-- Supabase account for backend services
 
-### Local Development Setup
+Ensure you have the following installed before proceeding:
+
+- **Node.js** `≥18.0.0`
+- **npm** (bundled with Node.js)
+- A **Supabase** project (for backend services)
+
+---
+
+### Installation
+
+**1. Clone the repository**
+
 ```bash
-# Clone repository
-git clone https://github.com/lipht/lipht.git
-cd lipht
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env.local
-# Edit .env.local with your Supabase credentials
-
-# Start development server
-npm run dev
+git clone https://github.com/gwenndestura/LiPHt.git
 ```
 
-### Environment Variables
+**2. Navigate into the project directory**
+
+```bash
+cd LiPHt
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Set up environment variables**
+
+Create a `.env` file in the project root and add your Supabase credentials:
+
 ```env
 VITE_SUPABASE_URL=your_supabase_project_url
 VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
 ```
 
----
+**5. Start the development server**
 
-## Usage
-
-1. **Browse Opportunities**: Navigate to the Opportunities page to explore available scholarships, training programs, and livelihood initiatives
-2. **Filter & Search**: Use filters to find opportunities by location, category, or eligibility requirements
-3. **View Details**: Click on any opportunity to see comprehensive information including requirements and application deadlines
-4. **Apply**: Follow guided application processes with built-in form validation
-5. **Track Progress**: Monitor application status and receive notifications through the platform
-
----
-
-## API Reference
-
-### Supabase Database Schema
-
-#### Opportunities Table
-```sql
-CREATE TABLE opportunities (
-  id UUID PRIMARY KEY,
-  title TEXT NOT NULL,
-  description TEXT,
-  category TEXT,
-  location TEXT,
-  eligibility TEXT,
-  deadline DATE,
-  application_url TEXT,
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP
-);
+```bash
+npm run dev
 ```
 
-#### Users Table
-```sql
-CREATE TABLE profiles (
-  id UUID PRIMARY KEY REFERENCES auth.users(id),
-  full_name TEXT,
-  location TEXT,
-  interests TEXT[],
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP
-);
+Open your browser and go to `http://localhost:5173`.
+
+---
+
+### Production Build
+
+**Build for production**
+
+```bash
+npm run build
 ```
 
-### Edge Functions
+**Preview the production build locally**
 
-#### Chat Function
-- **Endpoint**: `/functions/v1/chat`
-- **Method**: POST
-- **Purpose**: AI-powered chat support for users
-
-#### Send Notification Function
-- **Endpoint**: `/functions/v1/send-notification`
-- **Method**: POST
-- **Purpose**: Automated notifications for opportunity updates
-
----
-
-## Performance
-
-### Application Metrics
-- **Load Time**: < 2 seconds initial page load
-- **Core Web Vitals**: 90+ scores across all pages
-- **Mobile Performance**: Optimized for 3G connections
-- **Concurrent Users**: Supports 1000+ active users
-
-### Database Performance
-- **Query Response**: < 100ms average response time
-- **Real-time Updates**: Instant synchronization across clients
-- **Scalability**: Horizontal scaling with Supabase infrastructure
-
----
-
-## Security
-
-### Authentication & Authorization
-- JWT token-based authentication with automatic refresh
-- Row Level Security (RLS) policies on all database tables
-- Secure password hashing and validation
-- Session management with localStorage persistence
-
-### Data Protection
-- HTTPS encryption for all data transmission
-- Input sanitization and validation
-- SQL injection prevention through parameterized queries
-- Regular security audits and updates
-
-### Operational Security
-- Environment variable protection for sensitive data
-- CORS configuration for allowed origins
-- Rate limiting on API endpoints
-- Comprehensive logging and monitoring
-
----
-
-## Development
-
-### Project Structure
+```bash
+npm run preview
 ```
-lipht/
-├── public/                 # Static assets
+
+---
+
+## Project Structure
+
+```
+LiPHt/
+├── public/
 │   ├── favicon.ico
-│   ├── lipht-logo.png
 │   └── robots.txt
 ├── src/
-│   ├── components/         # Reusable UI components
-│   │   ├── ui/            # Shadcn UI components
-│   │   └── ...
-│   ├── pages/             # Page components
+│   ├── assets/                   # Logos, images, and static resources
+│   ├── components/
+│   │   ├── ui/                   # Shadcn UI base components
+│   │   ├── Chatbot.tsx           # AI-powered in-app chat support
+│   │   ├── DonateModal.tsx       # Donation flow with QR code support
+│   │   ├── DonationShowcase.tsx  # Gallery of past donations
+│   │   ├── Footer.tsx            # Site footer
+│   │   ├── Navigation.tsx        # Top navigation bar
+│   │   ├── NavLink.tsx           # Navigation link component
+│   │   └── OpportunityCard.tsx   # Opportunity listing card
+│   ├── hooks/
+│   │   ├── useAuth.tsx           # Authentication state hook
+│   │   └── useScrollAnimation.tsx # Scroll-triggered animation hook
+│   ├── integrations/
+│   │   └── supabase/             # Supabase client and type definitions
+│   ├── pages/
 │   │   ├── about/
+│   │   │   ├── Advocacy.tsx      # SDG 1 advocacy content
+│   │   │   ├── Articles.tsx      # Blog and news articles
+│   │   │   ├── Beneficiaries.tsx # Beneficiary stories
+│   │   │   └── SDG1.tsx          # SDG 1 overview page
 │   │   ├── admin/
-│   │   └── ...
-│   ├── hooks/             # Custom React hooks
-│   ├── integrations/      # External service integrations
-│   │   └── supabase/
-│   └── lib/               # Utility functions
-├── supabase/              # Backend configuration
-│   ├── functions/         # Edge functions
-│   └── migrations/        # Database migrations
-└── package.json           # Dependencies and scripts
-```
-
-### Contributing
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Make changes and add tests
-4. Commit changes (`git commit -am 'Add new feature'`)
-5. Push to branch (`git push origin feature/new-feature`)
-6. Create a Pull Request
-
-### Testing
-```bash
-# Install test dependencies
-npm install --save-dev vitest @testing-library/react
-
-# Run tests
-npm run test
-
-# Run tests with coverage
-npm run test:coverage
+│   │   │   └── Dashboard.tsx     # Admin management dashboard
+│   │   ├── Auth.tsx              # Login and sign-up
+│   │   ├── Contact.tsx           # Contact form
+│   │   ├── Donate.tsx            # Donation page
+│   │   ├── GetInvolved.tsx       # Volunteer and partnership page
+│   │   ├── Home.tsx              # Landing page
+│   │   ├── Opportunities.tsx     # Opportunity listings
+│   │   ├── Profile.tsx           # User profile
+│   │   └── SDG.tsx               # SDG overview
+│   ├── App.tsx                   # Root component and routing
+│   └── main.tsx                  # Application entry point
+├── supabase/
+│   ├── functions/
+│   │   ├── chat/                 # Chatbot edge function
+│   │   └── send-notification/    # Notification edge function
+│   └── migrations/               # Database migration scripts
+├── index.html
+├── vite.config.ts
+└── package.json
 ```
 
 ---
 
-## Configuration
+## Development Team
 
-### Build Configuration
-- **Vite Config**: Optimized build settings in `vite.config.ts`
-- **TypeScript**: Strict type checking in `tsconfig.json`
-- **Tailwind**: Custom design system in `tailwind.config.ts`
-- **ESLint**: Code quality rules in `eslint.config.js`
-
-### Supabase Configuration
-- **Project ID**: ivetcihhrcuctlprkltx
-- **Edge Functions**: Chat and notification services
-- **Database**: PostgreSQL with real-time capabilities
+| Name | Role |
+|---|---|
+| Princess Gwenn A. Destura | Developer |
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-- **Email**: contact@lipht.org
-- **Website**: https://lipht.org/
-- **Issues**: [GitHub Issues](https://github.com/lipht/lipht/issues)
-
----
-
-## Acknowledgments
-
-- Philippine Government agencies and NGOs for partnership opportunities
-- Supabase for providing robust backend infrastructure
-- Open-source React and TypeScript communities
-- Filipino communities for their resilience and hope
+<div align="center">
+  <sub>Uplifting Filipinos, Unlocking Futures &nbsp;·&nbsp; Aligned with UN SDG 1 — No Poverty</sub>
+</div>
